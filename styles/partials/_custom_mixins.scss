@@ -1,0 +1,32 @@
+// mixins
+
+@mixin jt-bold-fancy ($color: $gray-base) {
+  color: darken($color, $amount: 15%);
+  text-shadow: 1px 1px 2px lighten($color, $amount: 15%);
+}
+
+@mixin jt-button-fancy ($bgcolor: $primary-color, $fontcolor: darken($white, 15%)) {
+  background-color: $bgcolor;
+  background-image: linear-gradient(darken($bgcolor, 15%), darken($bgcolor, 15%));
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 0%;
+  color: $fontcolor;
+  transition: background-size .5s, color .5s;
+  transition-timing-function: ease-in-out;
+
+  &:hover {
+    background-size: 100% 100%;
+    color: lighten($fontcolor, 15%);
+  }
+
+}
+@mixin jt-links-fancy ($color: $accent-color) {
+  color: $color;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($color: $color, $amount: 15%);
+    text-decoration: none;
+  }
+}

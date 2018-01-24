@@ -1,0 +1,229 @@
+@import 'partials/custom';
+@import 'partials/bootstrap';
+@import 'partials/custom_mixins';
+
+
+// original
+
+// // general
+
+// html,
+// body {
+//   height: 100%;
+// }
+
+// body {
+//   background: $page-background-color;
+//   font-family: $primary-font;
+//   font-size: $base-font-size;
+//   @include breakpoint(md) {
+//     padding: 0 50px;
+//   }
+
+// }
+
+// a {
+//   @include links-fancy($primary-color);
+// }
+
+
+// h1,
+// h2 {
+//   color: $heading-color;
+//   font-family: $heading-font;
+//   font-weight: 600;
+
+// }
+
+// h1 {
+//   font-size: 3em;
+// }
+
+// .btn {
+//   @include button-fancy;
+// }
+
+// .callout {
+//   color: #ba259e;
+//   text-shadow: 1px 1px 2px $accent-color;
+// }
+
+// .sticky-footer {
+//   bottom: 0;
+//   left: 0;
+//   position: fixed;
+
+//   @include breakpoint(xs) {
+//     font-size: $base-font-size - 4px;
+//   }
+// }
+
+// // navbar
+
+// .navbar-default .navbar-nav>li>a {
+//   @include links-fancy($primary-color-light);
+//   font-size: $base-font-size;
+// }
+
+
+// .navbar-default .navbar-nav>.active>a,
+// .navbar-default .navbar-nav>.active>a:hover,
+// .navbar-default .navbar-nav>.active>a:focus {
+//   background-color: rgba(#e7e7e7, 0);
+//   color: $primary-color-dark;
+// }
+
+// #img-title {
+//   display: inline-flex;
+//   float: left;
+//   opacity: .75;
+//   padding-right: 5px;
+//   padding-top: 5px;
+//   width: 40px;
+
+//   @include breakpoint(xs) {
+//     display: none;
+//   }
+// }
+
+// #em-title {
+//   color: $primary-color-light !important;
+//   font-size: $base-font-size + 12px;
+
+//   &:hover {
+//     color: darken($primary-color-light, 15%) !important;
+//   }
+// }
+
+// // footer
+
+// footer {
+//   background: $gray-darker;
+//   clear: both;
+//   color: $primary-color-text;
+//   padding: 20px 0 30px;
+//   width: 100%;
+
+
+//   li {
+//     float: left;
+//     list-style: none;
+//     padding: 0 10px;
+//   }
+
+//   p {
+//     float: right;
+//     margin-bottom: 0;
+
+//     @include  breakpoint(xs) {
+//       float: none;
+//       margin-left: 50px;
+//       padding-top: 5px;
+//     }
+//   }
+// }
+
+
+// // index
+
+// #header {
+//   padding-top: 60px;
+
+//   .jumbotron {
+//     background: url('../images/cake-bkg.png') center top no-repeat;
+//     background-color: $primary-color;
+//     background-size: cover;
+//     margin-bottom: 15px;
+//     overflow: none;
+
+//     h1 {
+//       margin-top: -20px;
+
+//     }
+//   }
+// }
+
+// #about {
+//   margin-bottom: 30px;
+
+//   h1 {
+//     text-align: center;
+
+//   }
+
+//   p {
+//     padding: 0 10px;
+//   }
+
+//   .about-photo {
+//     border: 1px solid $primary-color-dark;
+//     border-radius: 5%;
+//     box-shadow: 2px 2px 3px $black;
+//     display: block;
+//     margin: 25px auto;
+//     width: 50%;
+
+
+//     @include breakpoint(sm) {
+//       margin: 25px auto 0;
+//       width: 100%;
+
+
+//     }
+//   }
+
+// }
+
+// #columns {
+
+//   h2 {
+//     font-size: 2.5em;
+//     text-align: center;
+//   }
+
+//   .btn {
+//     margin: 20px 0;
+//   }
+
+//   .col {
+//     margin-bottom: 20px;
+
+//     @include breakpoint(xs) {
+//       margin-bottom: 30px;
+
+//     }
+//   }
+
+//   .column-photo {
+//     width: 100%;
+//   }
+
+//   .carousel-indicators li {
+//     display: none;
+//   }
+
+//   .well {
+//     padding-top: 0;
+
+//   }
+// }
+
+// // contact
+
+// #contact {
+//   padding-bottom: 100px;
+//   padding-top: 100px;
+
+//   .btn {
+//     @include button-fancy($primary-color-light, #efefef);
+//   }
+
+//   h1 {
+//     margin-bottom: 20px;
+//     margin-top: -10px;
+//   }
+
+//   @include breakpoint(md) {
+//     padding-top: 90px;
+//   }
+// }
