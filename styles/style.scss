@@ -2,6 +2,30 @@
 @import 'partials/bootstrap';
 @import 'partials/custom_mixins';
 
+// general
+
+a {
+  @include jt-links-fancy;
+}
+
+#nav {
+
+  #logo-title {
+
+    @include media-breakpoint-up(sm) {
+      font-size: $navbar-brand-font-size + 1rem;
+    }
+
+    color: $accent-color;
+    font-size: $navbar-brand-font-size + .5rem;
+
+
+  }
+
+  ul>li {
+    font-size: $font-size-lg;
+  }
+}
 
 // original
 
