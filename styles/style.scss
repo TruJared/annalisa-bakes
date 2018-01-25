@@ -4,14 +4,25 @@
 
 @include parallax-init;
 
+body {
+  background: $ghost;
+  font: $primary-font;
+}
 
 a {
   @include jt-links-fancy;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: $heading-font;
+}
+
 .callout {
-  color: #ba259e;
-  text-shadow: 1px 1px 2px $accent-color;
+  color: $black;
+  text-shadow: 1px 1px 2px $accent-color + 50%;
 }
 
 // nav
@@ -39,6 +50,13 @@ nav {
 
 header {
 
+  margin-top: 1px;
+
+  h1 {
+    color: $ghost;
+    text-shadow: 1px 1px 2px $accent-color;
+  }
+
   .jumbotron {
     padding: 0;
   }
@@ -47,20 +65,16 @@ header {
 
     $hacky-background-url: '../images/cake-bkg.png',
     $hacky-height: 500px, // for background
-    $hacky-glass-height: 100%,
-    $hacky-glass-width: 100%,
+    $hacky-glass-height: 85%,
+    $hacky-glass-width: 85%,
     $hacky-margin-top: 25px,
-    $hacky-blur: 10px // works best 5 - 10
-    // $hacky-color:
+    $hacky-blur: 5px // works best 5 - 10
+    // $hacky-color: rgba($green, .1)
     );
-
-  .glass-overlay {
-    margin-top: 0;
-  }
 
   .glass-front {
     margin-top: 0;
-    padding-left: 20px;
+    padding-left: 30px;
 
   }
 
