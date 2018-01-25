@@ -7310,11 +7310,6 @@ body, body * {
           transform-style: preserve-3d;
 }
 
-.pusher {
-  background: #20c997;
-  height: 1500px;
-}
-
 a {
   color: #1aa2b4;
   text-decoration: none;
@@ -7346,27 +7341,45 @@ nav ul > li {
 }
 
 header .jumbotron {
-  background: #564787 url("../images/cake-bkg.png") no-repeat top center fixed;
-  background-size: cover;
-  height: 500px;
-  margin-top: 10px;
-  overflow: none;
-  padding: 0 !important;
+  padding: 0;
 }
 
 header .glass-back {
+  background: #564787 url("../images/cake-bkg.png") no-repeat fixed;
+  background-size: cover;
+  height: 500px;
+  overflow: hidden;
+  width: 100%;
+}
+
+header .glass-overlay {
   background: inherit;
-  bottom: 0;
-  -webkit-box-shadow: inset 0 0 0 3000px rgba(32, 201, 151, 0.3);
-          box-shadow: inset 0 0 0 3000px rgba(32, 201, 151, 0.3);
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 0 3000px rgba(128, 128, 128, 0.3);
+          box-shadow: inset 0 0 0 3000px rgba(128, 128, 128, 0.3);
   -webkit-filter: blur(10px);
           filter: blur(10px);
-  height: 60%;
-  left: 0;
-  margin-top: 70px;
-  position: absolute;
-  right: 0;
-  top: 0;
+  height: 100%;
+  margin: 25px auto;
+  position: relative;
   width: 100%;
+  z-index: 1;
+}
+
+header .glass-front {
+  float: right;
+  margin: 0 auto;
+  padding: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+header .glass-overlay {
+  margin-top: 0;
+}
+
+header .glass-front {
+  margin-top: 0;
+  padding-left: 20px;
 }
 /*# sourceMappingURL=style.css.map */
