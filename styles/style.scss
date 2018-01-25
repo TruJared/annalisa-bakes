@@ -57,6 +57,7 @@ header {
     text-shadow: 1px 1px 2px $accent-color;
   }
 
+
   .jumbotron {
     padding: 0;
   }
@@ -64,17 +65,17 @@ header {
   @include hackyglass (
 
     $hacky-background-url: '../images/cake-bkg.png',
-    $hacky-height: 500px, // for background
-    $hacky-glass-height: 85%,
-    $hacky-glass-width: 85%,
-    $hacky-margin-top: 25px,
+    $hacky-height: 200px, // for background
+    $hacky-glass-height: 100%,
+    $hacky-glass-width: 100%,
+    $hacky-margin-top: 5px,
     $hacky-blur: 5px // works best 5 - 10
     // $hacky-color: rgba($green, .1)
     );
 
   .glass-front {
-    margin-top: 0;
-    padding-left: 30px;
+    margin-top: 10px;
+    padding: 10px 30px;
 
   }
 
