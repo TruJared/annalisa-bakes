@@ -7299,18 +7299,32 @@ a:hover {
   text-decoration: none;
 }
 
-#nav #logo-title {
+.callout {
+  color: #ba259e;
+  text-shadow: 1px 1px 2px #1aa2b4;
+}
+
+nav #logo-title {
   color: #1aa2b4;
   font-size: 1.75rem;
 }
 
 @media (min-width: 576px) {
-  #nav #logo-title {
+  nav #logo-title {
     font-size: 2.25rem;
   }
 }
 
-#nav ul > li {
+nav ul > li {
   font-size: 1.25rem;
+}
+
+header .jumbotron {
+  background: url("../images/cake-bkg.png") center top no-repeat;
+  background-color: #564787;
+  background-size: cover;
+  height: 825px;
+  margin-top: 90px;
+  overflow: none;
 }
 /*# sourceMappingURL=style.css.map */
