@@ -2,93 +2,88 @@
 <html lang="en">
 
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112352751-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112352751-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-112352751-3');
-</script>
+    gtag('config', 'UA-112352751-3');
+  </script>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="Cakes By Annalisa" content="">
-  <meta name="Jared Truscott" content="">
+  <meta name="description" content="A website dedicated to my journey into cake making and design. While you're here, be sure to check out my podcast too!">
   <link rel="icon" href="favicon.ico">
 
-  <title>Gallery</title>
+  <title>Annalisa Bakes Cakes</title>
   <link href="styles/style.css" rel="stylesheet">
-
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a href="index.html" class="navbar-brand">
+      <img src="images/cake_icon.png" class="d-none d-lg-inline mr-2" alt="cute cake" width="60" height="60"><p class="logo-title d-inline align-bottom">Cakes By Annalisa</p></a>
+
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav mt-1 mt-lg-0 mr-2 ml-auto">
+        <li class="nav-item py-2 py-lg-0 px-lg-3">
+          <a href="#">Gallery</a>
+        </li>
+        <li class="nav-item py-2 py-lg-0 px-lg-3">
+          <a href="http://trujared.com" target="_blank">Podcast</a>
+        </li>
+        <li class="nav-item py-2 py-lg-0 px-lg-3">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
 
-
-  <section id="gallery">
+  <header class="my-lg-1">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3">
-          <img src="images/cake-gallery/cake1.jpg" class="cake-gallery-image" alt="">
+      <div class="glass-back">
+        <div class="glass-front text-center">
+          <h1>Have Your
+            <span class="callout">Cake</span> & Eat It Too</h1>
+          <hr>
+          <p class="lead text-lg-left">Sharing
+            <em>not</em> required</p>
         </div>
-        <div class="col-sm-3">
-          <img src="images/cake-gallery/cake1.jpg" class="cake-gallery-image" alt="">
-        </div>
-        <div class="col-sm-3">
-          <img src="images/cake-gallery/cake1.jpg" class="cake-gallery-image" alt="">
-        </div>
-        <div class="col-sm-3">
-          <img src="images/cake-gallery/cake1.jpg" class="cake-gallery-image" alt="">
-        </div>
-        <div class="col-sm-3">
-          <img src="images/cake-gallery/cake1.jpg" class="cake-gallery-image" alt="">
-        </div>
-        <div class="col-sm-3">
-          <img src="images/cake-gallery/cake1.jpg" class="cake-gallery-image" alt="">
-        </div>
-        <div class="col-sm-3">
-          <img src="images/cake-gallery/cake1.jpg" class="cake-gallery-image" alt="">
-        </div>
-        <div class="col-sm-3">
-          <img src="images/cake-gallery/cake1.jpg" class="cake-gallery-image" alt="">
-        </div>
-        <div class="col-sm-3">
-          <img src="images/cake-gallery/cake1.jpg" class="cake-gallery-image" alt="">
-        </div>
-        <div class="col-sm-3">
-          <img src="images/cake-gallery/cake1.jpg" class="cake-gallery-image" alt="">
-        </div>
+        <div class="glass-overlay"></div>
       </div>
     </div>
+  </header>
 
-  </section>
 
   <footer>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <ul>
+      <div class="row py-2">
+        <div class="col-md-6">
+          <ul class="pl-0">
             <li>
               <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="about.html">About</a>
             </li>
             <li>
               <a href="contact.html">Contact</a>
             </li>
             <li>
-              <a href="#">Privacy Policy</a>
+              <a href="https://ozybain.deviantart.com/art/50-s-60-s-inspired-Kitchen-548556759" target="_blank">Header Image By Ozybain</a>
             </li>
           </ul>
         </div>
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-md-6 text-md-right">
           <p>Copyright &copy: 2018 |
             <a href="http://trujared.com" target="_blank">Jared Truscott</a>
           </p>
@@ -100,9 +95,14 @@
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-  </script>
-  <script src="js/bootstrap.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- custom JS -->
+  <script src="js/main.js"></script>
 
 </body>
 
