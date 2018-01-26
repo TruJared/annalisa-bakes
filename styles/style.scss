@@ -20,6 +20,11 @@ h5 {
   font-family: $heading-font;
 }
 
+.active {
+  color: $gray-600;
+
+}
+
 .callout {
   color: $black;
   text-shadow: 1px 1px 2px $accent-color + 50%;
@@ -66,7 +71,7 @@ header {
   // glass
   @include hackyglass (
     $hacky-background-url: '../images/cake-bkg.png',
-    $hacky-height: 200px, // for background
+    $hacky-height: 250px, // for background
     $hacky-glass-height: 100%,
     $hacky-glass-width: 100%,
     $hacky-blur: 5px // works best 5 - 10
@@ -77,6 +82,7 @@ header {
     @include media-breakpoint-up(xl) {
       height: 300px;
     }
+
   }
 
   .glass-front {

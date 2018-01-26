@@ -50,7 +50,9 @@
  ) {
 
   .glass-back {
-    background: $primary-color url($hacky-background-url) no-repeat fixed;
+    background: $primary-color url($hacky-background-url);
+    background-position: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
     height: $hacky-height;
     overflow: hidden;

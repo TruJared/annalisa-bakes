@@ -7085,6 +7085,10 @@ h5 {
   font-family: "Lora", serif;
 }
 
+.active {
+  color: #6c757d;
+}
+
 .callout {
   color: #000;
   text-shadow: 1px 1px 2px #4cd4e6;
@@ -7126,9 +7130,11 @@ header .lead {
 }
 
 header .glass-back {
-  background: #564787 url("../images/cake-bkg.png") no-repeat fixed;
+  background: #564787 url("../images/cake-bkg.png");
+  background-position: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 200px;
+  height: 250px;
   overflow: hidden;
   width: 100%;
 }
