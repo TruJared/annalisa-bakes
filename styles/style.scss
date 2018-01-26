@@ -2,12 +2,9 @@
 @import 'partials/bootstrap';
 @import 'partials/custom_mixins';
 
-@include parallax-init;
-
 body {
-  background: $ghost;
   font-family: $primary-font;
-  font-size: $font-size-base + .05rem;
+
 }
 
 a {
@@ -19,6 +16,7 @@ h2,
 h3,
 h4,
 h5 {
+
   font-family: $heading-font;
 }
 
@@ -27,34 +25,37 @@ h5 {
   text-shadow: 1px 1px 2px $accent-color + 50%;
 }
 
-// nav
+.wrapper {
 
+  @include media-breakpoint-down(lg) {
+    background: $white;
+  }
+
+  background: rgba($ghost, .3); //slight color offest
+  width: 98%;
+}
+
+// nav
 nav {
 
   #logo-title {
-
-    @include media-breakpoint-up(sm) {
-      font-size: $navbar-brand-font-size + 1rem;
-    }
-
     color: $accent-color;
     font-size: $navbar-brand-font-size + .5rem;
 
-
-  }
-
-  ul>li {
-    font-size: $font-size-lg;
   }
 }
 
 header {
-
-  margin-top: 1px;
+  margin-top: 1px; // small space on > lg
 
   h1 {
+    @include media-breakpoint-up(lg) {
+      font-size: $h1-font-size + 1.25rem;
+    }
+
     color: $ghost;
     text-shadow: 1px 1px 2px $accent-color;
+
   }
 
   .lead {
@@ -62,7 +63,7 @@ header {
 
   }
 
-
+  // glass
   @include hackyglass (
     $hacky-background-url: '../images/cake-bkg.png',
     $hacky-height: 200px, // for background
@@ -72,11 +73,21 @@ header {
     // $hacky-color: rgba($green, .1)
     );
 
+  .glass-back {
+    @include media-breakpoint-up(xl) {
+      height: 300px;
+    }
+  }
+
   .glass-front {
+    @include media-breakpoint-up(lg) {
+      left: 0;
+      position: absolute;
+    }
+
     padding: 25px 30px 0;
 
   }
-
 }
 
 // footer
@@ -95,7 +106,6 @@ footer {
 
   li {
     display: inline;
-    font-size: $font-size-base;
     list-style: none;
     padding-right: 20px;
 
@@ -106,24 +116,40 @@ footer {
 
 // INDEX
 
-
-
 // about
 
 #about {
 
-  .about-photo {
+  p {
+    @include media-breakpoint-up(lg) {
+      font-size: $font-size-base + .25rem;
+    }
+  }
 
+  .about-photo {
 
     @include media-breakpoint-up(sm) {
       box-shadow: 5px 5px 5px $gray-500;
 
     }
 
-    width: 60%;
+    @include media-breakpoint-up(md) {
+      width: 100%;
+    }
+
+    width: 55%;
 
   }
 }
+
+// cards
+#cards {
+  .card-body {
+    padding: 5px;
+  }
+}
+
+
 
 
 
