@@ -6,7 +6,8 @@
 
 body {
   background: $ghost;
-  font: $primary-font;
+  font-family: $primary-font;
+  font-size: $font-size-base + .05rem;
 }
 
 a {
@@ -46,8 +47,6 @@ nav {
   }
 }
 
-// index
-
 header {
 
   margin-top: 1px;
@@ -58,13 +57,12 @@ header {
   }
 
   .lead {
-    color: $gray-500;
+    color: $gray-200;
 
   }
 
 
   @include hackyglass (
-
     $hacky-background-url: '../images/cake-bkg.png',
     $hacky-height: 200px, // for background
     $hacky-glass-height: 100%,
@@ -78,6 +76,52 @@ header {
 
   }
 
+}
+
+// footer
+
+footer {
+
+  background: $gray-800;
+  color: $primary-color-text;
+
+  // clear defaults
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  li {
+    display: inline;
+    font-size: $font-size-base;
+    list-style: none;
+    padding-right: 20px;
+
+  }
+
+
+}
+
+// INDEX
+
+
+
+// about
+
+#about {
+
+  .about-photo {
+
+
+    @include media-breakpoint-up(sm) {
+      box-shadow: 5px 5px 5px $gray-500;
+
+    }
+
+    width: 60%;
+
+  }
 }
 
 
@@ -229,7 +273,7 @@ header {
 //   .about-photo {
 //     border: 1px solid $primary-color-dark;
 //     border-radius: 5%;
-//     box-shadow: 2px 2px 3px $black;
+//
 //     display: block;
 //     margin: 25px auto;
 //     width: 50%;
