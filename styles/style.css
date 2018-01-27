@@ -7110,10 +7110,6 @@ nav .logo-title {
   font-size: 1.75rem;
 }
 
-header {
-  margin-top: 1px;
-}
-
 header h1 {
   color: #efefef;
   text-shadow: 1px 1px 2px #1aa2b4;
@@ -7194,6 +7190,12 @@ footer li {
   padding-right: 20px;
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #about {
+    line-height: 1.15;
+  }
+}
+
 @media (min-width: 992px) {
   #about p {
     font-size: 1.25rem;
@@ -7206,8 +7208,8 @@ footer li {
 
 @media (min-width: 576px) {
   #about .about-photo {
-    -webkit-box-shadow: 5px 5px 5px #adb5bd;
-            box-shadow: 5px 5px 5px #adb5bd;
+    -webkit-box-shadow: 1px 1px 2px #adb5bd;
+            box-shadow: 1px 1px 2px #adb5bd;
   }
 }
 

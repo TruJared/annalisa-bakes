@@ -51,7 +51,6 @@ nav {
 }
 
 header {
-  margin-top: 1px; // small space on > lg
 
   h1 {
     @include media-breakpoint-up(lg) {
@@ -126,6 +125,12 @@ footer {
 
 #about {
 
+  @include media-breakpoint-only(md) {
+    line-height: 1.15; // content fits better at this size
+
+  }
+
+
   p {
     @include media-breakpoint-up(lg) {
       font-size: $font-size-base + .25rem;
@@ -135,7 +140,7 @@ footer {
   .about-photo {
 
     @include media-breakpoint-up(sm) {
-      box-shadow: 5px 5px 5px $gray-500;
+      box-shadow: 1px 1px 2px $gray-500;
 
     }
 
